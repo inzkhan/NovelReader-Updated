@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 apply plugin: 'org.greenrobot.greendao'
 
 android {
@@ -36,6 +37,7 @@ repositories {
     maven {
         url 'https://dl.bintray.com/qichuan/maven/'
     }
+    mavenCentral()
 }
 
 dependencies {
@@ -76,4 +78,5 @@ dependencies {
 
     // AndroidTagGroup
     implementation 'me.gujun.android.taggroup:library:1.4@aar'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
